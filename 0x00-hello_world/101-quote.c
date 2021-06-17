@@ -2,8 +2,8 @@
 #include <string.h>
 #include <unistd.h>
 /**
- * main - below is the main block
- * Description: program prints the string "and that piece of art is useful" - Dora Korpar, 2015-10-19"
+ * main - main block
+ * Description: the main function displays the string in the write funcion
  * Return: 1
  */
 int main(void)
