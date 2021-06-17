@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- *Below is the man block
- * Its return value is 0
+ *main - is the man block that prints the string in the put function
+ *Description: the program below prints the string in the put function
+ *Return: value is 0
  */
 int main(void)
 {
