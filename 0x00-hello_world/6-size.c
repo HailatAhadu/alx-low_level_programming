@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/*
+ *Below is the main block
+ *Its return value is 0
+ */
 int main(void) {
   printf("Size of a char: %i byte(s)\n", sizeof(char));
   printf("Size of an int: %i byte(s)\n", sizeof(int));
