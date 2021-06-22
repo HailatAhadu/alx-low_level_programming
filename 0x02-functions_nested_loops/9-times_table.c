@@ -1,7 +1,6 @@
 #include "holberton.h"
 /**
- * Main: main blcok
- * Description: Print the 9 times table, starting with 0
+ * times_table - Print the 9 times table, starting with 0
  * Return: 0
  */
 void times_table(void)

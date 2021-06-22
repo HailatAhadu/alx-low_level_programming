@@ -1,9 +1,8 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * Main: main blcok
- * Description: Print all natural numbers from n to 98
- * No return value
+ * print_to_98 - Print all natural numbers from n to 98
+ * @n: int type number
  */
 void print_to_98(int n)
 {
