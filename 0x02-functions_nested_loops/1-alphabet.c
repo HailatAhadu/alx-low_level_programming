@@ -2,6 +2,7 @@
 /**
  * Main: main block
  * Description: Print alphabet in lowercase using only `_putchar`
+ * print_alphabet: function to print abcd
  * Return: 0
  */
 void print_alphabet(void)
