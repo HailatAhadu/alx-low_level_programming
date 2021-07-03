@@ -1,28 +1,29 @@
-#include "holberton.h"
-
 /**
- * leet - encode a string into 1337
- * @s: string
- * Return: encoded string `s`
+ * leet - convert characters into 1337
+ *
+ * @a: string to convert
+ *
+ * Return: string
  */
-
-char *leet(char *s)
+char *leet(char *a)
 {
-	int i;
+	char *sptr = a;
+	int index = 0;
+	char translation[][10] = { { 'a', 'A', 't', 'T', 'o', 'O', 'e', 'E', 'l', 'L'}
+				  , { '4', '4', '7', '7', '0', '0', '3', '3', '1', '1'} };
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (*sptr != 0)
 	{
-		while (s[i] == 'a' || s[i] == 'A')
-			s[i] = '4';
-		while (s[i] == 'e' || s[i] == 'E')
-			s[i] = '3';
-		while (s[i] == 'o' || s[i] == 'O')
-			s[i] = '0';
-		while (s[i] == 't' || s[i] == 'T')
-			s[i] = '7';
-		while (s[i] == 'l' || s[i] == 'L')
-			s[i] = '1';
+		if (*sptr == 'a' || *sptr == 'A' || *sptr == 'e' || *sptr == 'E'
+		    || *sptr == 'o' || *sptr == 'O' || *sptr == 't' || *sptr == 'T'
+		    || *sptr == 'l' || *sptr == 'L')
+		{
+			index = 0;
+			while (translation[0][index] != *sptr)
+				index++;
+			*sptr = translation[1][index];
+		}
+		sptr++;
 	}
-
-	return (s);
+	return (a);
 }
