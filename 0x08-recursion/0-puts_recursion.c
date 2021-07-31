@@ -1,13 +1,12 @@
+
 #include "holberton.h"
 
 /**
- * _puts_recursion - prints a string, followed by a new line
- * @s: pointer, an array
- *
- *
- * Return: void, returns nothing
- *
- */
+  * _puts_recursion - Print a string followed by a new line
+  * @s: the string to print
+  *
+  * Return: Nothing.
+  */
 void _puts_recursion(char *s)
 {
 	if (*s == '\0')
@@ -16,8 +15,7 @@ void _puts_recursion(char *s)
 		return;
 	}
 
-	if (*s != '\0')
-		_putchar(*s);
-
-	_puts_recursion(s + 1);
+	_putchar(*s);
+	s++;
+	_puts_recursion(s);
 }
